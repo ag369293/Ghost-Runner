@@ -20,13 +20,13 @@ function preload(){
 }
 
 function setup(){
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(400,400);
   spookySound.loop();
   tower=createSprite(300,300);
   tower.addImage("tower",towerImg);
   tower.velocityY=1;
   
-  ghost=createSprite(width/2,height/2,50,50);
+  ghost=createSprite(200,300,50,50);
   ghost.addImage("ghost",ghostImg);
   ghost.scale=0.3;
 }
